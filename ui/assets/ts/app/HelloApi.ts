@@ -23,19 +23,12 @@ Vue.createApp({
         watch(txtName, (newVal) => {
             update(newVal)
         })
-        // @ts-ignore
-        const count = Vue.ref(0);
-        const clickMe = () => {
-            count.value = count.value + 1;
-        }
         return {
-            count,
-            clickMe,
             result,
             txtName
         }
     },
     delimiters: ['[[', ']]'],
-}).mount('#app');
+}).mount('#hello-api-app');
 
 

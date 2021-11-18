@@ -1,9 +1,16 @@
-import {client} from "./client";
-import {Hello, HelloResponse} from "./dtos";
+/// <reference path="../../../types/env.d.ts" />
+const { createApp, ref, computed, watch } = Vue;
 
-let req: Hello = new Hello({
-    name: 'World'
-})
-client.get(req).then((res:HelloResponse) => {
-    console.log(res.result)
-})
+Vue.createApp({
+    setup() {
+        const count = Vue.ref(0);
+        const clickMe = () => {
+            count.value = count.value + 1;
+        }
+        return {
+            count,
+            clickMe
+        }
+    },
+    delimiters: ['[[', ']]'],
+}).mount('#hello-world-app');
