@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    {{- partial "head.html" . -}}
+    {{ block "meta_tags" . }}{{end}}
+</head>
+
+<body class="flex flex-col min-h-screen">
+{{- block "main" . }}{{- end }}
+</body>
+
+</html>
