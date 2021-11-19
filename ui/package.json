@@ -6,8 +6,13 @@
   "author": "",
   "license": "ISC",
   "scripts": {
+    "dev": "hugo server -D",
+    "build": "hugo",
+    "dtos": "cd assets/ts/app && x ts",
+    "publish": "hugo --destination ../api/MyApp/wwwroot",
+    "publish:dev": "cross-env NODE_ENV=development hugo --destination ../api/MyApp/wwwroot",
     "start": "hugo --gc",
-    "publish": "hugo --destination ../api/MyApp/wwwroot"
+    "typecheck": "tsc"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
