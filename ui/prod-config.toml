@@ -1,4 +1,4 @@
-baseURL = 'https://hugo-gh.web-template.io'
+baseURL = 'https://hugo-gh.web-templates.io'
 languageCode = 'en-us'
 [params]
-  apiURL = 'https://hugo.web-template.io'
+  apiURL = 'https://hugo.web-templates.io'
