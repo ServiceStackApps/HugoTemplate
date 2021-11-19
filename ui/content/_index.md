@@ -1,9 +1,11 @@
 ---
-author: "Hugo Authors"
-title: "Another Cool page"
+author: "ServiceStack"
+title: "Jamstack with Hugo and ServiceStack"
 ---
 
-Testing
+- Tailwind
+- test
+- test
 
 {{< hello-api >}}
 
