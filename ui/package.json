@@ -6,7 +6,8 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "start": "hugo --gc"
+    "start": "hugo --gc",
+    "publish": "hugo --destination ../api/MyApp/wwwroot"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
