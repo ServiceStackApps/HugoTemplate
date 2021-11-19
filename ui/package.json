@@ -19,6 +19,7 @@
     "@servicestack/client": "^1.0.57",
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.4.0",
+    "hugo-bin": "^0.77.4",
     "postcss": "^8.3.11",
     "postcss-cli": "^9.0.2",
     "postcss-import": "^14.0.2",
