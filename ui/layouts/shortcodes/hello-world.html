@@ -4,4 +4,4 @@
 </div>
 
 {{ $js := resources.Get "ts/app/main.ts" | js.Build }}
-<script src="{{ $js.Permalink }}" defer></script>
+<script src="{{ $js.RelPermalink }}" defer></script>

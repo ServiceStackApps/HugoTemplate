@@ -6,7 +6,7 @@
     {{ $targetPath := "js/vars.js" }}
     {{ $vars := $string | resources.FromString $targetPath }}
 
-    <script type="text/javascript" src="{{ $vars.Permalink }}"></script>
+    <script type="text/javascript" src="{{ $vars.RelPermalink }}"></script>
 
     {{- partial "head.html" . -}}
     {{ block "meta_tags" . }}{{end}}
