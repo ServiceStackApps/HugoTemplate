@@ -1,0 +1,4 @@
+baseURL = 'https://hugo-gh.web-template.io'
+languageCode = 'en-us'
+[params]
+  apiURL = 'https://hugo.web-template.io'

@@ -2,6 +2,12 @@
 <html lang="ja">
 
 <head>
+    {{ $string := (printf "var apiURL = '%s';" (.Site.Params.apiURL)) }}
+    {{ $targetPath := "js/vars.js" }}
+    {{ $vars := $string | resources.FromString $targetPath }}
+
+    <script type="text/javascript" src="{{ $vars.Permalink }}"></script>
+
     {{- partial "head.html" . -}}
     {{ block "meta_tags" . }}{{end}}
 </head>

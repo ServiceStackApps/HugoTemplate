@@ -1,2 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://localhost:1313'
 languageCode = 'en-us'
+[params]
+  apiURL = 'http://localhost:5000'

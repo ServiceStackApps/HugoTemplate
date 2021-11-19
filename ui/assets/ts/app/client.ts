@@ -1,3 +1,8 @@
 import {JsonServiceClient} from "@servicestack/client";
 
-export const client = new JsonServiceClient('http://localhost:5000/');
+// @ts-ignore
+let apiUrl = apiURL;
+
+console.log(apiUrl)
+
+export const client = new JsonServiceClient(apiUrl);

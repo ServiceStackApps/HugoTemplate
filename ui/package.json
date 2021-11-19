@@ -6,12 +6,12 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "dev": "hugo server -D",
-    "build": "hugo",
+    "dev": "hugo --config config.toml server -D",
+    "build": "hugo --config prod-config.toml",
     "dtos": "cd assets/ts/app && x ts",
-    "publish": "hugo --destination ../api/MyApp/wwwroot",
-    "publish:dev": "cross-env NODE_ENV=development hugo --destination ../api/MyApp/wwwroot",
-    "start": "hugo --gc",
+    "publish": "hugo --config prod-config.toml --destination ../api/MyApp/wwwroot",
+    "publish:dev": "hugo --config config.toml --destination ../api/MyApp/wwwroot",
+    "start": "hugo --config config.toml --gc",
     "typecheck": "tsc"
   },
   "devDependencies": {
