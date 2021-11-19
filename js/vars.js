@@ -1,0 +1,1 @@
+var apiURL = 'https://hugo.web-templates.io';
